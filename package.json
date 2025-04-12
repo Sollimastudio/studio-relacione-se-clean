@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && mv dist/public/googlebe58f563df00c509.html dist/googlebe58f563df00c509.html && rm -rf dist/public",
     "serve": "vite preview"
   },
   "dependencies": {},
