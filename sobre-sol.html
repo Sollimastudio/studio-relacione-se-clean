@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Sol Lima | Relacione-se</title>
+  <meta name="description" content="Conheça Sol Lima, criadora do Relacione-se e do Método Posicione-se™: CSI da mente, escritora, analista comportamental e criadora de métodos sobre posicionamento, presença e reconstrução emocional." />
+  <style>
+    :root{
+      --black:#050505;
+      --coal:#0b0b0b;
+      --gold:#d4af37;
+      --gold2:#a67c2d;
+      --cream:#f4e8d0;
+      --sand:#d8c39a;
+      --wine:#4a0404;
+      --burgundy:#2a0202;
+      --text:#eee5d6;
+      --muted:#b9ac96;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--black);color:var(--text);line-height:1.65;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at top right,rgba(212,175,55,.16),transparent 34%),radial-gradient(circle at bottom left,rgba(74,4,4,.28),transparent 36%),linear-gradient(180deg,#050505,#090707 55%,#050505);z-index:-2}
+    .nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(16px);background:rgba(5,5,5,.72);border-bottom:1px solid rgba(212,175,55,.18)}
+    .nav-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px 22px}
+    .brand{font-family:Georgia,"Times New Roman",serif;letter-spacing:.22em;color:var(--gold);font-size:18px;text-decoration:none;text-transform:uppercase}
+    .nav a{color:var(--cream);text-decoration:none;font-size:14px;margin-left:22px;opacity:.86}
+    .nav .cta{padding:10px 16px;border:1px solid rgba(212,175,55,.7);border-radius:999px;color:var(--gold)}
+    .hero{min-height:88vh;display:grid;place-items:center;padding:72px 22px 54px;border-bottom:1px solid rgba(212,175,55,.14)}
+    .hero-grid{max-width:1180px;width:100%;display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:center}
+    .eyebrow{color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-weight:700;font-size:12px;margin-bottom:16px}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.04}
+    h1{font-size:clamp(44px,8vw,90px);letter-spacing:-.055em;margin-bottom:22px;color:#fff4dc}
+    .hero p{font-size:clamp(18px,2.1vw,23px);color:var(--muted);max-width:660px;margin-bottom:22px}
+    .hero strong{color:var(--cream)}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;text-decoration:none;font-weight:800;letter-spacing:.02em}
+    .button.primary{background:linear-gradient(135deg,var(--gold),#f4d47a);color:#120d06}
+    .button.secondary{border:1px solid rgba(244,232,208,.28);color:var(--cream)}
+    .portrait{position:relative;min-height:620px;border-radius:34px;overflow:hidden;border:1px solid rgba(212,175,55,.28);background:linear-gradient(145deg,rgba(74,4,4,.52),rgba(10,10,10,.94)),radial-gradient(circle at 50% 20%,rgba(212,175,55,.2),transparent 36%);box-shadow:0 28px 120px rgba(0,0,0,.55)}
+    .portrait:before{content:"SOL LIMA";position:absolute;inset:auto 28px 26px;letter-spacing:.22em;color:rgba(212,175,55,.55);font-family:Georgia,"Times New Roman",serif;font-size:20px;text-align:center;border-top:1px solid rgba(212,175,55,.24);padding-top:18px}
+    .portrait:after{content:"CSI DA MENTE";position:absolute;inset:28px 28px auto;color:rgba(244,232,208,.58);letter-spacing:.24em;text-align:center;font-size:12px;text-transform:uppercase}
+    .section{padding:88px 22px;border-bottom:1px solid rgba(212,175,55,.1)}
+    .wrap{max-width:1120px;margin:0 auto}
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:start}
+    h2{font-size:clamp(34px,5vw,62px);color:#fff4dc;margin-bottom:22px;letter-spacing:-.035em}
+    h3{font-size:28px;color:var(--gold);margin-bottom:12px}
+    p{font-size:18px;color:var(--muted);margin-bottom:18px}
+    .lead{font-size:23px;color:var(--cream)}
+    .quote{border-left:3px solid var(--gold);padding:24px 28px;margin:34px 0;background:rgba(212,175,55,.06);border-radius:0 20px 20px 0;color:var(--cream);font-family:Georgia,"Times New Roman",serif;font-size:clamp(25px,3vw,38px);line-height:1.18}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+    .card{padding:26px;border:1px solid rgba(212,175,55,.2);border-radius:24px;background:rgba(255,255,255,.035)}
+    .card p{font-size:16px;margin:0}
+    .timeline{display:grid;gap:18px;margin-top:30px}
+    .item{display:grid;grid-template-columns:130px 1fr;gap:26px;padding:24px;border:1px solid rgba(244,232,208,.1);border-radius:24px;background:linear-gradient(135deg,rgba(255,255,255,.045),rgba(255,255,255,.015))}
+    .item .label{color:var(--gold);font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+    .dark{background:linear-gradient(180deg,rgba(74,4,4,.45),rgba(5,5,5,.96))}
+    .cream{background:var(--cream);color:#111}
+    .cream h2,.cream h3{color:#15110b}.cream p{color:#352b1d}.cream .quote{background:rgba(74,4,4,.06);color:#160f08}
+    .final{text-align:center;padding:110px 22px;background:radial-gradient(circle at center,rgba(212,175,55,.12),transparent 32%),#050505}
+    .final h2{max-width:900px;margin:0 auto 24px}
+    .final p{max-width:700px;margin-left:auto;margin-right:auto}
+    .footer{padding:38px 22px;text-align:center;color:rgba(244,232,208,.46);letter-spacing:.08em;font-size:13px}
+    @media(max-width:860px){.nav-inner{display:block}.nav-links{margin-top:12px;display:flex;flex-wrap:wrap;gap:10px}.nav a{margin:0}.hero-grid,.split{grid-template-columns:1fr}.portrait{min-height:430px}.cards{grid-template-columns:1fr}.item{grid-template-columns:1fr}.section{padding:64px 18px}.hero{padding-top:54px}.hero-actions{display:grid}.button{width:100%}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">Relacione-se</a>
+      <div class="nav-links">
+        <a href="/">Início</a>
+        <a href="#historia">História</a>
+        <a href="#metodo">Método</a>
+        <a href="#ecosistema">Ecossistema</a>
+        <a class="cta" href="/comecar.html">Comece aqui</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Sobre Sol Lima</div>
+        <h1>CSI da mente. Escritora. Criadora do Método Posicione-se™.</h1>
+        <p><strong>Eu não comecei buscando autoestima.</strong> Comecei tentando impedir que minha história se repetisse nos meus filhos.</p>
+        <p>Foi investigando minha própria morte em vida que entendi uma verdade simples e brutal: muita dor poderia ter sido evitada se eu tivesse tido discernimento, limite e posicionamento.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#historia">Conhecer minha história</a>
+          <a class="button secondary" href="#ecosistema">Ver meus caminhos</a>
+        </div>
+      </div>
+      <div class="portrait" aria-label="Retrato editorial de Sol Lima"></div>
+    </div>
+  </header>
+
+  <section id="historia" class="section">
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow">A origem</div>
+        <h2>Eu via o palco, mas minha mente sempre investigou os bastidores.</h2>
+      </div>
+      <div>
+        <p class="lead">Nunca me contentei com “eu acho”. Minha mente procura a raiz, o padrão, o detalhe escondido, a repetição, a omissão, a consequência e o fruto.</p>
+        <p>Isso me cansa. Sim. Nem qualquer prazer me diverte. Nem qualquer surpresa me surpreende. Minha mente vê o lado oposto em tudo, e isso nem sempre é confortável.</p>
+        <p>Mas foi justamente essa forma de pensar que me salvou. Quando parei de aceitar o show da superfície, comecei a entender os bastidores da minha própria história.</p>
+        <div class="quote">O discurso pode mentir. A evidência, não.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow">Morte em Vida</div>
+        <h2>A mulher que funcionava por fora enquanto desaparecia por dentro.</h2>
+      </div>
+      <div>
+        <p>Durante muitos anos, vivi o que hoje chamo de morte em vida: respirando, cuidando, funcionando e seguindo em frente, enquanto minha identidade, autoestima, libido, voz e presença eram apagadas por dentro.</p>
+        <p>Eu não estava morta. Mas também não estava inteira.</p>
+        <p>A virada não veio como cena bonita de filme. Veio quando percebi minha história tentando se repetir na vida dos meus filhos. Ali, a mãe levantou antes da mulher.</p>
+        <div class="quote">Antes de uma mulher morrer fisicamente, muitas vezes ela já foi morta emocionalmente.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="metodo" class="section cream">
+    <div class="wrap">
+      <div class="eyebrow">Método Posicione-se™</div>
+      <h2>Todo mundo já está posicionado. Até não se posicionar é uma posição.</h2>
+      <p class="lead">Se os frutos estão ruins, não basta reclamar da colheita. É preciso investigar solo, raiz, tronco, galhos, pragas, poda e adubo.</p>
+      <div class="cards">
+        <div class="card"><h3>Soberania interna</h3><p>Parar de viver sequestrada pelo medo, pela culpa, pela carência ou pela validação externa.</p></div>
+        <div class="card"><h3>Limite sagrado</h3><p>Proteger seu território emocional sem invadir o território do outro.</p></div>
+        <div class="card"><h3>Ação com futuro</h3><p>Escolher pelo fruto que você quer colher amanhã, não pelo impulso que grita hoje.</p></div>
+      </div>
+      <div class="quote">Sua árvore, seus frutos.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow">Linha do tempo</div>
+      <h2>Da dor ao método, do método ao ecossistema.</h2>
+      <div class="timeline">
+        <div class="item"><div class="label">Infância</div><div><p>Uma menina criada em um ambiente pobre, rígido e dogmático, onde autocuidado parecia luxo, vaidade ou pecado. Antes de saber cuidar do cabelo, do corpo ou da imagem, ela aprendeu a sobreviver.</p></div></div>
+        <div class="item"><div class="label">Relações</div><div><p>Relacionamentos se tornaram espelhos duros. Em vez de apenas viver amor, ela começou a investigar padrões, feridas, escolhas e permissões.</p></div></div>
+        <div class="item"><div class="label">Maternidade</div><div><p>Quando viu sua história tentando alcançar os filhos, a busca deixou de ser apenas pessoal. Era preciso interromper uma repetição.</p></div></div>
+        <div class="item"><div class="label">Investigação</div><div><p>Autoconhecimento, comportamento humano, relacionamentos, presença, imagem, DISC, formações e observação intensa viraram ferramentas de reconstrução.</p></div></div>
+        <div class="item"><div class="label">Método</div><div><p>Nasceram o Relacione-se, o Método Posicione-se™, a Árvore do Discernimento, o Magnetus, o MINDSETmagro e os livros que organizam sua travessia.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ecosistema" class="section dark">
+    <div class="wrap">
+      <div class="eyebrow">Ecossistema Relacione-se</div>
+      <h2>O que eu criei para transformar caos em evidência.</h2>
+      <div class="cards">
+        <div class="card"><h3>Morte em Vida</h3><p>Livro autobiográfico sobre feminicídio emocional, apagamento interno e reconstrução.</p></div>
+        <div class="card"><h3>Posicione-se™</h3><p>Método de discernimento, limites, responsabilidade e reposicionamento.</p></div>
+        <div class="card"><h3>Magnetus</h3><p>Protocolo de presença, autoestima, postura emocional e magnetismo comportamental.</p></div>
+        <div class="card"><h3>MINDSETmagro</h3><p>Desobesidade emocional: corpo como fruto, mente como solo e escolha como semente.</p></div>
+        <div class="card"><h3>Árvore do Discernimento</h3><p>Ferramenta para subir na árvore, suspender julgamento e descer com decisão.</p></div>
+        <div class="card"><h3>CSI da mente</h3><p>Minha forma de investigar evidências, bastidores, padrões e frutos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cream">
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow">Minha missão</div>
+        <h2>Antes de relacionar-se, relacione-se.</h2>
+      </div>
+      <div>
+        <p class="lead">Relacione-se nasceu quando entendi que eu não precisava buscar fora todos os recursos que ainda não sabia acessar dentro de mim.</p>
+        <p>Meu trabalho é ajudar pessoas a investigarem seus padrões, reconhecerem seus modos operantes, acessarem recursos internos e se reposicionarem com mais presença, consciência e responsabilidade.</p>
+        <p>Não falo de uma vida perfeita. Falo de perseverança. De recomeço. De todos os dias escolher não abandonar a própria árvore.</p>
+        <div class="quote">O final feliz ainda não chegou. Enquanto isso, eu recomeço.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Eu não acredito no palco antes de investigar os bastidores.</h2>
+      <p>Se você chegou até aqui, talvez algum fruto também esteja tentando te mostrar alguma coisa.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="button primary" href="/comecar.html">Comece aqui</a>
+        <a class="button secondary" href="/">Voltar para a Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">RELACIONE-SE · SOL LIMA · ACESSE SEUS RECURSOS INTERNOS</footer>
+</body>
+</html>
